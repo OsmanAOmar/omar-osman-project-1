@@ -2,4 +2,26 @@
 @use 'setup';
 @use 'navigation';
 @use 'header';
-@use 'footer'
+@use 'footer';
+
+$font-stack: 'Rubik', sans-serif;
+$normal-weight: 400;
+$light-weight: 300;
+$primary: #abd373;
+$secondary: #4c4c4c;
+$tertiary: #000;
+$quaternary: #88cce2;
+$quinary: #fff;
+$senary: #f6f7fb;
+
+body {
+    font-family: $font-stack;
+    font-weight: $normal-weight;
+}
+
+h1,
+h2,
+h3 {
+    font-family: $font-stack;
+    font-weight: $light-weight;
+}
