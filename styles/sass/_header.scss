@@ -1,0 +1,24 @@
+@use './variables' as *;
+
+.sales-wrapper {
+    background: $primary;
+    color: $senary;
+    font-weight: $light-weight;
+    font-size: .75rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+}
+
+select {
+    font-size: .75rem;
+    border: 1px solid transparent;
+    background: transparent;
+    color: $senary;
+}
+
+
+nav {
+    height: 50px;
+}

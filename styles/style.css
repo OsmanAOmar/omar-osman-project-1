@@ -212,9 +212,38 @@ html {
           box-sizing: inherit;
 }
 
+.sales-wrapper {
+  background: #abd373;
+  color: #f6f7fb;
+  font-weight: 300;
+  font-size: 0.75rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+select {
+  font-size: 0.75rem;
+  border: 1px solid transparent;
+  background: transparent;
+  color: #f6f7fb;
+}
+
+nav {
+  height: 50px;
+}
+
 body {
   font-family: "Rubik", sans-serif;
   font-weight: 400;
+  padding: 0 auto;
+  margin: 0 auto;
 }
 
 h1,
@@ -222,4 +251,12 @@ h2,
 h3 {
   font-family: "Rubik", sans-serif;
   font-weight: 300;
+}
+
+a:link {
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
 }
