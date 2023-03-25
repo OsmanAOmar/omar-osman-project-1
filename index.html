@@ -22,35 +22,54 @@
   </head>
   <body>
     <!-- HEADER -->
-    <header>
-      <!-- SALES -->
-      <div class="sales-wrapper">
-        <div class="sale-text">
-          <p>HELLO EVERYONE! 25% OFF ALL PRODUCTS</p>
-        </div>
-        <div class="selector">
-          <select id="currency">
-            <option value="CAD">CAD</option>
-            <option value="USD">USD</option>
-          </select>
-          <select id="language">
-            <option value="ENG">ENGLISH</option>
-            <option value="FR">FR</option>
-          </select>
-        </div>
+    <!-- SALES -->
+    <div class="sales-wrapper">
+      <div class="sale-text">
+        <p>HELLO EVERYONE! 25% OFF ALL PRODUCTS</p>
       </div>
-      <!-- HERO BANNER -->
-      <nav>
-        <img src="./assets/logo.png" alt="Pronia logo" />
-        <ul>
+      <div class="selector">
+        <select id="currency">
+          <option value="CAD">CAD</option>
+          <option value="USD">USD</option>
+        </select>
+        <select id="language">
+          <option value="ENG">ENGLISH</option>
+          <option value="FR">FRENCH</option>
+        </select>
+      </div>
+    </div>
+    <!-- NAVIGATION -->
+    <div class="wrapper">
+      <nav class="nav">
+        <!-- brand -->
+        <div class="nav-brand">
+          <img src="./assets/logo.png" alt="Pronia logo" />
+        </div>
+        <!-- links -->
+        <ul class="nav-bar">
           <li><a href="#home">Home</a></li>
           <li><a href="#blog">Blog</a></li>
           <li><a href="#contact">Contact Us</a></li>
         </ul>
-        <a href="#shopping"
-          ><img src="assets/icons/shopping-bag.svg" alt="a shopping bag"
-        /></a>
+        <!-- shopping cart -->
+        <div class="shopping-logo">
+          <a href="#shopping"
+            ><img src="assets/icons/shopping-bag.svg" alt="a shopping bag"
+          /></a>
+        </div>
       </nav>
+    </div>
+    <!-- HEADER -->
+    <header>
+      <div class="wrapper">
+        <h2>65% OFF</h2>
+        <h1>NEW PLANT</h1>
+        <p>Pronia, With 100% Natural, Organic & Plant Shop.</p>
+        <a href="#discover">discover now</a>
+      </div>
+      <div class="hero">
+        <img src="assets/header.png" alt="Shrubs in two geometric pots." />
+      </div>
     </header>
     <!-- SHIPPING BUTTONS -->
     <!-- PRODUCTS -->

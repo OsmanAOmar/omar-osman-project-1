@@ -1,12 +1,19 @@
 @use './variables' as *;
 
+header {
+    border: 1px solid red;
+    background: $septenary;
+    height: 85vh;
+}
+
+// SALES
 .sales-wrapper {
     background: $primary;
     color: $senary;
     font-weight: $light-weight;
     font-size: .75rem;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
     
 }
@@ -18,7 +25,55 @@ select {
     color: $senary;
 }
 
+// NAVIGATION
+.nav {
+    height: 10vh;
+    background: $quinary;
+    color: $tertiary;
+    font-weight: $light-weight;
+    font-size: .75rem;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    li {
+        float: left;
+    }
+    a {
+        padding: 20px;
+    }
+}
 
-nav {
-    height: 50px;
+// nav .logo {
+//     height: auto;
+// }
+
+// HERO
+header {
+    display: flex;
+}
+
+// header button {
+//     font-weight: $light-weight;
+//     font-size: .5rem;
+//     background: $primary;
+//     color: $quinary;
+//     border: none;
+//     text-transform: uppercase;
+//     min-width: 100px;
+//     padding: 10px 20px;
+//     border-radius: 500px;
+//     margin: 0 auto;
+
+// }
+
+header .wrapper a {
+    color: $quinary;
+    background: $primary;
+    font-size: .75rem;
+    font-weight: $light-weight;
+    text-transform: uppercase;
+    padding: 10px 20px;
+    display: inline-block;
+    border-radius: 500px;
 }
