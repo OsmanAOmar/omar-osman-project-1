@@ -10,8 +10,8 @@ header {
 .sales-wrapper {
     background: $primary;
     color: $senary;
-    font-weight: $light-weight;
-    font-size: .75rem;
+    font-weight: $normal-weight;
+    font-size: .6rem;
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -19,7 +19,7 @@ header {
 }
 
 select {
-    font-size: .75rem;
+    font-size: .6rem;
     border: 1px solid transparent;
     background: transparent;
     color: $senary;
@@ -36,36 +36,71 @@ select {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    flex: 1 1 auto;
+    .nav-brand {
+        border: 1px solid red;
+    }
     li {
         float: left;
     }
     a {
+        border: 1px solid red;
         padding: 20px;
+        color: $tertiary;
     }
 }
 
-// nav .logo {
-//     height: auto;
-// }
 
 // HERO
-header {
+.header-text {
+    border: 1px solid red;
     display: flex;
+    flex-wrap: nowrap;
+    flex-direction: column;
+    text-transform: uppercase;
+    // line-height: 10px;
+    // margin: 50px;
+    // padding: 50px;
+    h1 {
+        font-size: 4rem;
+    }
+    h2 {
+        font-size: 2.5rem;
+    }
+    p {
+        text-transform: capitalize;
+    }
+    button {
+        font-weight: $light-weight;
+        font-size: .5rem;
+        background: $primary;
+        color: $quinary;
+        border: none;
+        text-transform: uppercase;
+        min-width: 100px;
+        padding: 10px 20px;
+        border-radius: 500px;
+        margin: 0 auto;
+ }
+
 }
+header .container {
+    border: 1px solid blue;
+    padding: 0 auto;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+    align-items: center;
+    flex: 1;
+}
+   
+    .header-img {
+        border: 1px solid red;
+        width: 75%;
+        height: 75%;
+    }
 
-// header button {
-//     font-weight: $light-weight;
-//     font-size: .5rem;
-//     background: $primary;
-//     color: $quinary;
-//     border: none;
-//     text-transform: uppercase;
-//     min-width: 100px;
-//     padding: 10px 20px;
-//     border-radius: 500px;
-//     margin: 0 auto;
 
-// }
 
 header .wrapper a {
     color: $quinary;
