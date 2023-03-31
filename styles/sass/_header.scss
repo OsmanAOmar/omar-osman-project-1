@@ -1,114 +1,109 @@
-@use './variables' as *;
+@use "./variables" as *;
 
 header {
-    border: 1px solid red;
-    background: $septenary;
-    height: 85vh;
+  border: 1px solid red;
+  background: $septenary;
+  height: 85vh;
 }
 
 // SALES
 .sales-wrapper {
-    background: $primary;
-    color: $senary;
-    font-weight: $normal-weight;
-    font-size: .6rem;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    
+  background: $primary;
+  color: $senary;
+  font-weight: $normal-weight;
+  font-size: 0.6rem;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
 }
 
 select {
-    font-size: .6rem;
-    border: 1px solid transparent;
-    background: transparent;
-    color: $senary;
+  font-size: 0.6rem;
+  border: 1px solid transparent;
+  background: transparent;
+  color: $senary;
 }
 
 // NAVIGATION
 .nav {
-    height: 10vh;
-    background: $quinary;
+  height: 10vh;
+  background: $quinary;
+  color: $tertiary;
+  font-weight: $light-weight;
+  font-size: 0.75rem;
+  padding: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex: 1 1 auto;
+  .nav-brand {
+    border: 1px solid red;
+  }
+  li {
+    float: left;
+  }
+  a {
+    border: 1px solid red;
+    padding: 20px;
     color: $tertiary;
-    font-weight: $light-weight;
-    font-size: .75rem;
-    padding: 10px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    flex: 1 1 auto;
-    .nav-brand {
-        border: 1px solid red;
-    }
-    li {
-        float: left;
-    }
-    a {
-        border: 1px solid red;
-        padding: 20px;
-        color: $tertiary;
-    }
+  }
 }
-
 
 // HERO
 .header-text {
-    border: 1px solid red;
-    display: flex;
-    flex-wrap: nowrap;
-    flex-direction: column;
+  // border: 1px solid red;
+  display: flex;
+  flex-wrap: nowrap;
+  flex-direction: column;
+  text-transform: uppercase;
+  // line-height: 10px;
+  // margin: 50px;
+  // padding: 50px;
+  h1 {
+    font-size: 4rem;
+  }
+  h2 {
+    font-size: 2.5rem;
+  }
+  p {
+    text-transform: capitalize;
+  }
+  button {
+    font-weight: $light-weight;
+    font-size: 0.5rem;
+    background: $primary;
+    color: $quinary;
+    border: none;
     text-transform: uppercase;
-    // line-height: 10px;
-    // margin: 50px;
-    // padding: 50px;
-    h1 {
-        font-size: 4rem;
-    }
-    h2 {
-        font-size: 2.5rem;
-    }
-    p {
-        text-transform: capitalize;
-    }
-    button {
-        font-weight: $light-weight;
-        font-size: .5rem;
-        background: $primary;
-        color: $quinary;
-        border: none;
-        text-transform: uppercase;
-        min-width: 100px;
-        padding: 10px 20px;
-        border-radius: 500px;
-        margin: 0 auto;
- }
-
+    min-width: 100px;
+    padding: 10px 20px;
+    border-radius: 500px;
+    margin: 0 auto;
+  }
 }
 header .container {
-    border: 1px solid blue;
-    padding: 0 auto;
-    display: flex;
-    flex-wrap: nowrap;
-    justify-content: flex-start;
-    align-items: center;
-    flex: 1;
+  // border: 1px solid blue;
+  padding: 0 auto;
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: flex-start;
+  align-items: center;
+  flex: 1;
 }
-   
-    .header-img {
-        border: 1px solid red;
-        width: 75%;
-        height: 75%;
-    }
 
-
+.header-img {
+  border: 1px solid red;
+  width: 75%;
+  height: 75%;
+}
 
 header .wrapper a {
-    color: $quinary;
-    background: $primary;
-    font-size: .75rem;
-    font-weight: $light-weight;
-    text-transform: uppercase;
-    padding: 10px 20px;
-    display: inline-block;
-    border-radius: 500px;
+  color: $quinary;
+  background: $primary;
+  font-size: 0.75rem;
+  font-weight: $light-weight;
+  text-transform: uppercase;
+  padding: 10px 20px;
+  display: inline-block;
+  border-radius: 500px;
 }
