@@ -1,0 +1,10 @@
+@use "./variables" as *;
+
+.blog-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  .blog-post {
+    width: calc(100% / 3);
+  }
+}

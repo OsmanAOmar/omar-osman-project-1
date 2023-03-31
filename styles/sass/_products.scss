@@ -10,7 +10,6 @@
 ul .text-container {
   border: 1px dotted black;
   display: flex;
-  flex-direction: column;
   padding-left: 20px;
   padding-right: 20px;
   margin: 10px;
@@ -19,7 +18,7 @@ ul .text-container {
   }
 }
 
-.flex-container {
+.gallery {
   border: 2px solid green;
   display: flex;
   flex-wrap: wrap;
