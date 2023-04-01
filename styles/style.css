@@ -342,10 +342,15 @@ header .wrapper a {
 }
 
 footer {
-  background-image: url(/assets/footer.jpg);
+  background-image: url(./../assets/footer.jpg);
+}
+footer img {
+  height: auto;
+  width: auto;
 }
 
 .footer-container {
+  border: 1px solid orangered;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -354,10 +359,32 @@ footer {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  padding-top: 50px;
 }
-.footer-container img {
-  height: auto;
-  width: auto;
+.footer-container .footer-menu {
+  border: 1px solid purple;
+  top: 0;
+  width: 20%;
+  text-transform: capitalize;
+  font-size: 0.9rem;
+  line-height: normal;
+  margin: 10px;
+}
+.footer-container .footer-menu .footer-menu-item a {
+  color: #000;
+  margin: 5px;
+  padding: 10px;
+}
+
+.trademark {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-item-align: center;
+      align-self: center;
 }
 
 .products h2 {
