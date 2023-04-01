@@ -3,3 +3,13 @@
 footer {
   background-image: url(/assets/footer.jpg);
 }
+
+.footer-container {
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: center;
+  img {
+    height: auto;
+    width: auto;
+  }
+}
