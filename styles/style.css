@@ -436,23 +436,24 @@ section .flex-collection {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
 }
-section .flex-collection .image-container {
-  margin: 2%;
-  width: 46%;
+section .flex-collection .image-long {
+  width: 75%;
   position: relative;
 }
-section .flex-collection .image-container div {
+section .flex-collection .image-long div {
+  border: 1px solid tomato;
   position: absolute;
   top: 0;
+  font-size: 0.75rem;
   text-transform: capitalize;
   width: 100%;
-  height: 100%;
+  height: auto;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -467,7 +468,38 @@ section .flex-collection .image-container div {
       -ms-flex-align: center;
           align-items: center;
 }
-section .flex-collection .image-container div button {
+section .flex-collection .image-long div button {
+  text-transform: uppercase;
+}
+
+.image-short {
+  width: 25%;
+  height: auto;
+  position: relative;
+}
+.image-short div {
+  border: 1px solid tomato;
+  position: absolute;
+  top: 0;
+  font-size: 0.75rem;
+  text-transform: capitalize;
+  width: 100%;
+  height: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.image-short div button {
   text-transform: uppercase;
 }
 
