@@ -1,10 +1,23 @@
 @use "./variables" as *;
 
-section .flex-collection {
+section {
+  margin-top: 20px;
+}
+
+.flex-collection {
   display: flex;
   flex-wrap: nowrap;
   justify-content: center;
+  height: 300px;
+  gap: 20px;
+  li {
+    height: 100%;
+  }
   .image-long {
+    // img {
+    //   object-fit: cover;
+    //   object-position: center;
+    // }
     width: 75%;
     // height: auto;
     position: relative;
@@ -15,7 +28,7 @@ section .flex-collection {
       font-size: 0.75rem;
       text-transform: capitalize;
       width: 100%;
-      height: auto;
+      //   height: auto;
       display: flex;
       flex-direction: column;
       justify-content: center;
@@ -27,8 +40,8 @@ section .flex-collection {
   }
 }
 .image-short {
-  width: 25%;
-  height: auto;
+  //   width: 25%;
+  //   height: auto;
   position: relative;
   div {
     border: 1px solid tomato;
@@ -37,7 +50,7 @@ section .flex-collection {
     font-size: 0.75rem;
     text-transform: capitalize;
     width: 100%;
-    height: auto;
+    // height: auto;
     display: flex;
     flex-direction: column;
     justify-content: center;
