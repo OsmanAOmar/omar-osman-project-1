@@ -18,7 +18,7 @@ section {
     //   object-fit: cover;
     //   object-position: center;
     // }
-    width: 75%;
+    width: 71%;
     // height: auto;
     position: relative;
     div {
@@ -27,15 +27,14 @@ section {
       top: 0;
       font-size: 0.75rem;
       text-transform: capitalize;
-      width: 100%;
-      //   height: auto;
+      width: 50%;
+      height: 100%;
       display: flex;
       flex-direction: column;
       justify-content: center;
       align-items: center;
-      button {
-        text-transform: uppercase;
-      }
+      padding-left: 25px;
+      text-align: left;
     }
   }
 }
@@ -43,6 +42,12 @@ section {
   //   width: 25%;
   //   height: auto;
   position: relative;
+  // li {
+  //   display: flex;
+  //   flex-direction: column;
+  //   justify-content: center;`
+  //   align-items: center;
+  // }
   div {
     border: 1px solid tomato;
     position: absolute;
@@ -50,13 +55,22 @@ section {
     font-size: 0.75rem;
     text-transform: capitalize;
     width: 100%;
-    // height: auto;
+    height: 80%;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    button {
-      text-transform: uppercase;
-    }
+    margin: auto;
+  }
+}
+
+.flex-collection {
+  p {
+    font-size: 1.2rem;
+    text-align: left;
+  }
+  h2 {
+    font-size: 2rem;
+    font-weight: 600;
   }
 }

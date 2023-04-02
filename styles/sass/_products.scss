@@ -8,13 +8,13 @@
   padding: 20px 0;
 }
 
-.flex-container {
+.product-menu {
   display: flex;
   justify-content: center;
   align-self: center;
 }
 
-.text-container {
+.product-menu-item {
   border: 3px dotted black;
   width: auto;
   display: flex;
@@ -26,7 +26,7 @@
   }
 }
 
-.text-container:hover {
+.product-menu-item:hover {
   border: 3px dotted $primary;
   color: $primary;
   width: auto;

@@ -68,18 +68,6 @@ select {
   p {
     text-transform: capitalize;
   }
-  button {
-    font-weight: $light-weight;
-    font-size: 0.5rem;
-    background: $primary;
-    color: $quinary;
-    border: none;
-    text-transform: uppercase;
-    min-width: 100px;
-    padding: 10px 20px;
-    border-radius: 500px;
-    margin: 0 auto;
-  }
 }
 header .container {
   // border: 1px solid blue;
