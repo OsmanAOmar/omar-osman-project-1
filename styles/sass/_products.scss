@@ -7,14 +7,35 @@
   text-align: center;
   padding: 20px 0;
 }
-ul .text-container {
-  border: 1px dotted black;
+
+.flex-container {
+  display: flex;
+  justify-content: center;
+  align-self: center;
+}
+
+.text-container {
+  border: 3px dotted black;
+  width: auto;
   display: flex;
   padding-left: 20px;
   padding-right: 20px;
   margin: 10px;
-  .text-container:hover {
-    border: 1px dotted $primary;
+  a {
+    color: $tertiary;
+  }
+}
+
+.text-container:hover {
+  border: 3px dotted $primary;
+  color: $primary;
+  width: auto;
+  display: flex;
+  padding-left: 20px;
+  padding-right: 20px;
+  margin: 10px;
+  a {
+    color: $primary;
   }
 }
 
