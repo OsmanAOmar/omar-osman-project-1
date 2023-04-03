@@ -2,16 +2,9 @@
 
 footer {
   background-image: url(./../assets/footer.jpg);
-  // img {
-  //   height: auto;
-  //   width: auto;
-  // }
 }
 
 .icons {
-  // display: flex;
-  // // flex-direction: row;
-  // justify-content: space-between;
   ul {
     display: flex;
     justify-content: space-around;
@@ -26,16 +19,13 @@ footer {
 }
 
 .footer-container {
-  // border: 1px solid orangered;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-  //   align-items: center;
   padding-top: 50px;
 }
 
 .footer-menu {
-  // border: 1px solid purple;
   top: 0;
   width: calc((100% / 5) - 20px);
   text-transform: capitalize;
@@ -49,7 +39,6 @@ footer {
     padding: 10px;
   }
   .footer-menu-item a {
-    //   border: 1px solid red;
     font-weight: $bold-weight;
     color: $tertiary;
     margin: 5px;
@@ -59,7 +48,6 @@ footer {
 }
 
 .trademark {
-  // border: 1px solid blue;
   color: rgb(129, 179, 54);
   display: flex;
   justify-content: center;

@@ -775,6 +775,7 @@ fieldset {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  padding: 50px;
 }
 .form-container .form-left {
   background-image: url(./../assets/contact.jpg);
@@ -795,16 +796,22 @@ fieldset {
   text-transform: capitalize;
   top: 0;
   padding: 20px 5px;
-  line-height: 40px;
+  line-height: 30px;
 }
 .form-container .form-right {
-  border: solid 1px purple;
+  -webkit-box-shadow: 10px 10px 3px #f6f7fb;
+          box-shadow: 10px 10px 3px #f6f7fb;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   width: 100%;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
+}
+.form-container .form-right .contact-label {
+  color: grey;
+  font-style: italic;
+  opacity: 0.75;
 }
 
 label {

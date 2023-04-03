@@ -1,7 +1,6 @@
 @use "./variables" as *;
 
 .header-home {
-  // border: 1px solid red;
   background: $septenary;
   height: 85vh;
 }
@@ -31,27 +30,21 @@ select {
   color: $tertiary;
   font-weight: $bold-weight;
   font-size: 0.75rem;
-  // padding: 10px;
+
   display: flex;
   justify-content: space-between;
   align-items: center;
   flex: 1 1 auto;
-  .nav-brand {
-    // border: 1px solid red;
-  }
   li {
     float: left;
   }
   a {
-    // border: 1px solid red;
     padding: 20px;
     color: $tertiary;
   }
 }
 
-// HERO
 .header-text {
-  // border: 1px solid blue;
   display: flex;
   flex-wrap: wrap;
   flex-direction: column;
@@ -75,19 +68,12 @@ select {
 }
 
 header .container {
-  // border: 1px solid blue;
   padding: 0 auto;
   display: flex;
   flex-wrap: nowrap;
   justify-content: flex-start;
   align-items: center;
   flex: 1;
-}
-
-.header-img {
-  // border: 1px solid red;
-  // width: 75%;
-  // height: 75%;
 }
 
 header .wrapper a {

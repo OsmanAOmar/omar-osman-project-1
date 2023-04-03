@@ -1,13 +1,5 @@
 @use "./variables" as *;
 
-// .products h2 {
-//   text-transform: uppercase;
-//   font-size: 2rem;
-//   font-weight: 600;
-//   text-align: center;
-//   padding: 20px 0;
-// }
-
 .products {
   display: flex;
   justify-content: center;
@@ -63,7 +55,6 @@
 }
 
 .gallery {
-  // border: 2px solid green;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
@@ -84,22 +75,9 @@
 }
 
 .image-container div {
-  //   position: absolute;
-  //   top: 0;
-  //   width: 100%;
-  //   height: 100%;
-  //   padding: 20px;
-  //   display: flex;
-  //   flex-direction: column;
-  //   justify-content: center;
-  //   align-items: center;
   color: $tertiary;
   font-weight: $bold-weight;
   z-index: 10;
-  // h3 {
-  //   // color: $tertiary;
-  //   font-weight: 550;
-  // }
   p {
     color: $primary;
     font-weight: $normal-weight;

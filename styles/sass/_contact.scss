@@ -23,7 +23,6 @@ form {
 
 input[type="first-name"],
 input[type="last-name"],
-// input[type="text"],
 input[type="email"],
 input[type="phone"] {
   height: 48px;
@@ -46,6 +45,7 @@ fieldset {
 
 .form-container {
   display: flex;
+  padding: 50px;
   .form-left {
     background-image: url(./../assets/contact.jpg);
     background-repeat: no-repeat;
@@ -58,13 +58,18 @@ fieldset {
     text-transform: capitalize;
     top: 0;
     padding: 20px 5px;
-    line-height: 40px;
+    line-height: 30px;
   }
   .form-right {
-    border: solid 1px purple;
+    box-shadow: 10px 10px 3px $senary;
     display: flex;
     width: 100%;
     flex-wrap: wrap;
+    .contact-label {
+      color: grey;
+      font-style: italic;
+      opacity: 0.75;
+    }
   }
 }
 

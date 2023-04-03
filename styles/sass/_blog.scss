@@ -31,13 +31,9 @@
 }
 
 .blog-container {
-  // border: dotted 1px pink;
   display: flex;
   flex-wrap: wrap;
   padding: 40px 0;
-  // width: 100%;
-  // justify-content: center;
-  // font-size: 0.75rem;
 }
 
 .blog-post {
@@ -55,10 +51,8 @@
 }
 
 .blog-content {
-  // border: dotted 1px green;
   width: 100%;
   margin: 1%;
-  // padding: 5px 20px;
   font-size: 0.8rem;
   p1 {
     color: $primary;
@@ -70,7 +64,6 @@
     text-transform: capitalize;
   }
   p {
-    // border: solid 1px tomato;
     width: 100%;
     margin: 0;
     padding: 10px;
