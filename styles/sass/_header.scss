@@ -51,16 +51,17 @@ select {
 
 // HERO
 .header-text {
-  // border: 1px solid red;
+  border: 1px solid blue;
   display: flex;
-  flex-wrap: nowrap;
+  flex-wrap: wrap;
   flex-direction: column;
   text-transform: uppercase;
-  // line-height: 10px;
-  // margin: 50px;
-  // padding: 50px;
+  margin: auto;
+  padding: 20px;
+  line-height: 0.75rem;
   h1 {
     font-size: 4rem;
+    letter-spacing: 5px;
   }
   h2 {
     font-size: 2.5rem;
@@ -68,7 +69,11 @@ select {
   p {
     text-transform: capitalize;
   }
+  .button {
+    width: 50%;
+  }
 }
+
 header .container {
   // border: 1px solid blue;
   padding: 0 auto;
@@ -81,8 +86,8 @@ header .container {
 
 .header-img {
   border: 1px solid red;
-  width: 75%;
-  height: 75%;
+  // width: 75%;
+  // height: 75%;
 }
 
 header .wrapper a {
