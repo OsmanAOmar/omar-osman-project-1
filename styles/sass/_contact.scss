@@ -1,5 +1,61 @@
-@use ".variables" as *;
+@use "./variables" as *;
 
 .header-contact {
-  background-image: url(./../../assests/contact-header.jpg);
+  background-image: url(./../assets/contact-header.jpg);
+  height: 50vh;
+  display: flex;
+  justify-content: center;
+  .header-contact-text {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    h1 {
+      font-size: 2rem;
+      text-transform: uppercase;
+    }
+  }
+}
+
+form {
+  text-align: center;
+}
+
+input[type="first-name"],
+input[type="last-name"],
+input[type="text"],
+input[type="email"],
+input[type="phone"] {
+  height: 48px;
+  padding: 0 13px;
+  width: 100%;
+  margin: 10px 0;
+  border: 0;
+  border: 1px solid rgb(223, 224, 230);
+}
+
+fieldset {
+  border: none;
+  text-align: left;
+}
+
+.form-container {
+  border: 1px solid red;
+  background-image: url(./../assets/contact.jpg);
+  background-repeat: no-repeat;
+  background-position: contain;
+  width: 100%;
+  //   height: 100%;
+  display: flex;
+  //   flex-direction: column;
+  .form-text {
+    border: solid 1px blue;
+    display: flex;
+    flex-direction: column;
+    font-size: 0.8rem;
+  }
+  .form-input {
+    border: solid 1px purple;
+    display: flex;
+  }
 }
