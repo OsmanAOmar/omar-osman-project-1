@@ -38,7 +38,7 @@
 }
 
 .product-menu-item {
-  border: 3px dotted black;
+  border: 3px dotted $tertiary;
   width: auto;
   display: flex;
   padding-left: 20px;
@@ -63,7 +63,7 @@
 }
 
 .gallery {
-  border: 2px solid green;
+  // border: 2px solid green;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;

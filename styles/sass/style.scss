@@ -6,6 +6,7 @@
 @use "products";
 @use "collection";
 @use "blog";
+@use "contact";
 @use "./variables" as *;
 
 // General Style
@@ -57,5 +58,7 @@ img {
   min-width: 100px;
   padding: 10px 20px;
   border-radius: 500px;
-  margin: 0 aut;
+  a {
+    color: $quinary;
+  }
 }

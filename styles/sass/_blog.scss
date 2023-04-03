@@ -31,7 +31,7 @@
 }
 
 .blog-container {
-  border: dotted 1px pink;
+  // border: dotted 1px pink;
   display: flex;
   flex-wrap: wrap;
   padding: 40px 0;
@@ -55,7 +55,7 @@
 }
 
 .blog-content {
-  border: dotted 1px green;
+  // border: dotted 1px green;
   width: 100%;
   margin: 1%;
   // padding: 5px 20px;
@@ -70,7 +70,7 @@
     text-transform: capitalize;
   }
   p {
-    border: solid 1px tomato;
+    // border: solid 1px tomato;
     width: 100%;
     margin: 0;
     padding: 10px;

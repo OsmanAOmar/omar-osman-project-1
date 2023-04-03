@@ -213,7 +213,6 @@ html {
 }
 
 header {
-  border: 1px solid red;
   background: #faf0e6;
   height: 85vh;
 }
@@ -244,7 +243,7 @@ select {
   height: 10vh;
   background: #fff;
   color: #000;
-  font-weight: 300;
+  font-weight: 500;
   font-size: 0.75rem;
   padding: 10px;
   display: -webkit-box;
@@ -260,20 +259,15 @@ select {
       -ms-flex: 1 1 auto;
           flex: 1 1 auto;
 }
-.nav .nav-brand {
-  border: 1px solid red;
-}
 .nav li {
   float: left;
 }
 .nav a {
-  border: 1px solid red;
   padding: 20px;
   color: #000;
 }
 
 .header-text {
-  border: 1px solid blue;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -320,10 +314,6 @@ header .container {
           flex: 1;
 }
 
-.header-img {
-  border: 1px solid red;
-}
-
 header .wrapper a {
   color: #fff;
   background: #abd373;
@@ -338,47 +328,64 @@ header .wrapper a {
 footer {
   background-image: url(./../assets/footer.jpg);
 }
-footer img {
-  height: auto;
-  width: auto;
-}
 
-.footer-container {
-  border: 1px solid orangered;
+.icons ul {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -ms-flex-wrap: nowrap;
-      flex-wrap: nowrap;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  color: #000;
+}
+.icons li {
+  border: 1px solid #000;
+  color: #000;
+  margin: auto;
+  padding: 5px;
+}
+
+.footer-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   padding-top: 50px;
 }
-.footer-container .footer-menu {
-  border: 1px solid purple;
+
+.footer-menu {
   top: 0;
-  width: 20%;
+  width: calc(20% - 20px);
   text-transform: capitalize;
   font-size: 0.9rem;
   line-height: normal;
   margin: 10px;
 }
-.footer-container .footer-menu .footer-menu-item a {
-  color: #000;
+.footer-menu h3 {
+  font-size: 1.1rem;
+  font-weight: 500;
   margin: 5px;
   padding: 10px;
 }
+.footer-menu .footer-menu-item a {
+  font-weight: 500;
+  color: #000;
+  margin: 5px;
+  padding: 10px;
+  line-height: 30px;
+}
 
 .trademark {
+  color: rgb(129, 179, 54);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -ms-flex-item-align: center;
-      align-self: center;
 }
 
 .products {
@@ -429,7 +436,7 @@ footer img {
 }
 
 .product-menu-item {
-  border: 3px dotted black;
+  border: 3px dotted #000;
   width: auto;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -458,7 +465,6 @@ footer img {
 }
 
 .gallery {
-  border: 2px solid green;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -516,7 +522,6 @@ section {
   position: relative;
 }
 .flex-collection .image-long div {
-  border: 1px solid tomato;
   position: absolute;
   top: 0;
   font-size: 0.75rem;
@@ -531,7 +536,6 @@ section {
   position: relative;
 }
 .image-short div {
-  border: 1px solid tomato;
   position: absolute;
   top: 0;
   font-size: 0.75rem;
@@ -614,7 +618,6 @@ section {
 }
 
 .blog-container {
-  border: dotted 1px pink;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -647,7 +650,6 @@ section {
 }
 
 .blog-content {
-  border: dotted 1px green;
   width: 100%;
   margin: 1%;
   font-size: 0.8rem;
@@ -662,7 +664,6 @@ section {
   text-transform: capitalize;
 }
 .blog-content p {
-  border: solid 1px tomato;
   width: 100%;
   margin: 0;
   padding: 10px;
@@ -720,5 +721,7 @@ img {
   min-width: 100px;
   padding: 10px 20px;
   border-radius: 500px;
-  margin: 0 aut;
+}
+.button a {
+  color: #fff;
 }
