@@ -751,7 +751,6 @@ form {
 
 input[type=first-name],
 input[type=last-name],
-input[type=text],
 input[type=email],
 input[type=phone] {
   height: 48px;
@@ -762,23 +761,25 @@ input[type=phone] {
   border: 1px solid rgb(223, 224, 230);
 }
 
+input[type=message] {
+  height: 200px;
+  width: 600px;
+}
+
 fieldset {
   border: none;
   text-align: left;
 }
 
 .form-container {
-  border: 1px solid red;
-  background-image: url(./../assets/contact.jpg);
-  background-repeat: no-repeat;
-  background-position: contain;
-  width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
 }
-.form-container .form-text {
-  border: solid 1px blue;
+.form-container .form-left {
+  background-image: url(./../assets/contact.jpg);
+  background-repeat: no-repeat;
+  background-position: cover;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -786,13 +787,43 @@ fieldset {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
   font-size: 0.8rem;
+  color: #fff;
+  text-transform: capitalize;
+  top: 0;
+  padding: 20px 5px;
+  line-height: 40px;
 }
-.form-container .form-input {
+.form-container .form-right {
   border: solid 1px purple;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  width: 100%;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+label {
+  display: block;
+}
+
+.contact-label {
+  float: left;
+  margin-right: 20px;
+}
+
+.contact-label .button {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
 }
 
 html {

@@ -23,7 +23,7 @@ form {
 
 input[type="first-name"],
 input[type="last-name"],
-input[type="text"],
+// input[type="text"],
 input[type="email"],
 input[type="phone"] {
   height: 48px;
@@ -34,28 +34,51 @@ input[type="phone"] {
   border: 1px solid rgb(223, 224, 230);
 }
 
+input[type="message"] {
+  height: 200px;
+  width: 600px;
+}
+
 fieldset {
   border: none;
   text-align: left;
 }
 
 .form-container {
-  border: 1px solid red;
-  background-image: url(./../assets/contact.jpg);
-  background-repeat: no-repeat;
-  background-position: contain;
-  width: 100%;
-  //   height: 100%;
   display: flex;
-  //   flex-direction: column;
-  .form-text {
-    border: solid 1px blue;
+  .form-left {
+    background-image: url(./../assets/contact.jpg);
+    background-repeat: no-repeat;
+    background-position: cover;
     display: flex;
     flex-direction: column;
+    justify-content: flex-start;
     font-size: 0.8rem;
+    color: $quinary;
+    text-transform: capitalize;
+    top: 0;
+    padding: 20px 5px;
+    line-height: 40px;
   }
-  .form-input {
+  .form-right {
     border: solid 1px purple;
     display: flex;
+    width: 100%;
+    flex-wrap: wrap;
   }
+}
+
+label {
+  display: block;
+}
+
+.contact-label {
+  float: left;
+  margin-right: 20px;
+}
+
+.contact-label .button {
+  position: relative;
+  display: flex;
+  justify-content: flex-end;
 }
