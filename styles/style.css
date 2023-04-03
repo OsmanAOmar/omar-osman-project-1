@@ -375,12 +375,40 @@ footer img {
       align-self: center;
 }
 
+.products {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
 .products h2 {
-  text-transform: uppercase;
-  font-size: 2rem;
-  font-weight: 600;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  width: 50%;
   text-align: center;
-  padding: 20px 0;
+  margin: auto;
+  padding: 40px;
+  text-transform: uppercase;
+  font-weight: 600;
+}
+.products h2:before,
+.products h2:after {
+  content: "";
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1;
+          flex: 1 1;
+  border-bottom: 2px solid #000;
+  margin: auto;
 }
 
 .product-menu {
@@ -542,6 +570,7 @@ section {
   width: 50%;
   text-align: center;
   margin: auto;
+  padding: 20px;
   text-transform: uppercase;
   font-weight: 600;
 }
@@ -565,13 +594,16 @@ section {
 }
 
 .blog-container {
+  border: dotted 1px pink;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
+  padding: 40px 0;
 }
-.blog-container .blog-post {
+
+.blog-post {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -579,16 +611,43 @@ section {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  -webkit-box-flex: wrap;
+      -ms-flex: wrap;
+          flex: wrap;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
   background: #f6f7fb;
   width: 31.3333333333%;
   margin: 1%;
+  padding: 1%;
 }
-.blog-container .blog-post .blog-content {
-  margin: 5px;
-  padding: 5px 20px;
+.blog-post img {
+  min-width: 50%;
+}
+
+.blog-content {
+  border: dotted 1px green;
+  width: 100%;
+  margin: 1%;
+  font-size: 0.8rem;
+}
+.blog-content p1 {
+  color: #abd373;
+  text-transform: uppercase;
+}
+.blog-content h3 {
+  font-weight: 600;
+  font-size: 1.4rem;
+  text-transform: capitalize;
+}
+.blog-content p {
+  border: solid 1px tomato;
+  width: 100%;
+  margin: 0;
+  padding: 10px;
+  text-align: left;
+  line-height: 150%;
 }
 
 html {
@@ -616,6 +675,7 @@ ul {
 
 img {
   max-width: 100%;
+  min-width: 50%;
   height: auto;
   -o-object-fit: cover;
      object-fit: cover;
