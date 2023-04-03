@@ -531,20 +531,45 @@ section {
       -ms-flex-align: center;
           align-items: center;
 }
+.blog h2 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  width: 50%;
+  text-align: center;
+  margin: auto;
+  text-transform: uppercase;
+  font-weight: 600;
+}
+.blog h2:before,
+.blog h2:after {
+  content: "";
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1;
+          flex: 1 1;
+  border-bottom: 2px solid #000;
+  margin: auto;
+}
+.blog p {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 75%;
+  text-align: center;
+  margin: auto;
+  padding: 20px;
+}
 
 .blog-container {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -ms-flex-wrap: nowrap;
-      flex-wrap: nowrap;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  font-size: 0.75rem;
-  -webkit-box-pack: spa;
-      -ms-flex-pack: spa;
-          justify-content: spa;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
 .blog-container .blog-post {
   display: -webkit-box;
@@ -559,8 +584,11 @@ section {
           justify-content: space-between;
   background: #f6f7fb;
   width: 31.3333333333%;
-  margin: 2%;
-  padding: 5px;
+  margin: 1%;
+}
+.blog-container .blog-post .blog-content {
+  margin: 5px;
+  padding: 5px 20px;
 }
 
 html {
